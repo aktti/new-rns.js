@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNS IT SOLUTIONS</title>
+</head>
+<body>
+<script>
+function show(a,b,c,d){
+console.log(`my name is ${this.firstname} ${a}. ${b},${c}.${d}`);  
+}  
+ 
+
+const person1={
+    Firstname :' Ayushi '  ,
+    Lastname  :' Sharma '  ,
+}
+
+const person2={
+    Firstname :" Yash"   , 
+    Lastname  :" Gupta"  ,
+    'about'   :  show    ,
+}
+show.apply(person2,[1,2,3,4])
+
+
+</script>  
+</body>
+</html>

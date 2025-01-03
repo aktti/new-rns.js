@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>left triangle star pattern - javascript</title>
+</head>
+<body>
+  <script>
+    //let n = 5; // you can take input from prompt or change the value
+    //let string = "";
+    //for (let i = 1; i <= n; i++) {
+      // printing spaces
+      //for (let j = 0; j < n - i; j++) {
+       // string += " ";
+    //  }
+      // printing star
+     // for (let k = 0; k < i; k++) {
+        //string += "*";
+      ///}
+      //string += "<br>";
+   // }
+    //document.write(`<pre>${string}</pre>`);
+
+    //let n = 5; // you can take input from prompt or change the value
+    //let string = "";
+    //for (let i = 0; i < n; i++) {
+      //for (let j = 0; j <= i; j++) {
+        //string += "*";
+      //}
+      //string += "<br>";
+    //}
+    //document.write(string);
+
+
+    var n = 6;
+    var str = "";
+    for (let i = n / 2; i < n; i += 2) {
+      // print first spaces
+      for (let j = 1; j < n - i; j += 2) {
+        str += " ";
+      }
+      // print first stars
+      for (let j = 1; j < i + 1; j++) {
+        str += "*";
+      }
+      // print second spaces
+      for (let j = 1; j < n - i + 1; j++) {
+        str += " ";
+      }
+      // print second stars
+      for (let j = 1; j < i + 1; j++) {
+        str += "*";
+      }
+      str += "\n";
+    }
+    // lower part
+    // inverted pyramid
+    for (let i = n; i > 0; i--) {
+      for (let j = 0; j < n - i; j++) {
+        str += " ";
+      }
+      for (let j = 1; j < i * 2; j++) {
+        str += "*";
+      }
+      str += "\n";
+    }
+    console.log(str);
+    document.write(`<pre>${str}</pre>`);
+
+
+  </script>
+</body>
+</html>

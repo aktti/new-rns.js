@@ -1,0 +1,204 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: blueviolet; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.fan {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: #ddd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+}
+.fan:after {
+	content: '';
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: #fff;
+	border-radius: 50%;
+	border: 15px double blueviolet;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+.blade {
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	background: #fff;
+	border-radius: 50px;
+	transform-origin: 50% 50%;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+.blade:nth-child(1) {
+	transform: rotate(0deg) translate(150px) rotate(0deg);
+}
+.blade:nth-child(2) {
+	transform: rotate(120deg) translate(150px) rotate(0deg);
+}
+.blade:nth-child(3) {
+	transform: rotate(240deg) translate(150px) rotate(0deg);
+}
+input[type="checkbox"] {
+	position: absolute;
+	bottom: 50px;
+	width: 40px;
+	height: 40px;
+}
+input[type="checkbox"]+.fan {
+	animation-play-state: running;
+}
+input[type="checkbox"]:checked+.fan {
+	animation-play-state: paused;* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: blueviolet; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .fan {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: #ddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+    }
+    .fan:after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: #fff;
+        border-radius: 50%;
+        border: 15px double blueviolet;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    }
+    .blade {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        background: #fff;
+        border-radius: 50px;
+        transform-origin: 50% 50%;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    }
+    .blade:nth-child(1) {
+        transform: rotate(0deg) translate(150px) rotate(0deg);
+    }
+    .blade:nth-child(2) {
+        transform: rotate(120deg) translate(150px) rotate(0deg);
+    }
+    .blade:nth-child(3) {
+        transform: rotate(240deg) translate(150px) rotate(0deg);
+    }
+    input[type="checkbox"] {
+        position: absolute;
+        bottom: 50px;
+        width: 40px;
+        height: 40px;
+    }
+    input[type="checkbox"]+.fan {
+        animation-play-state: running;* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: blueviolet; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .fan {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+        }
+        .fan:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: #fff;
+            border-radius: 50%;
+            border: 15px double blueviolet;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+        }
+        .blade {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            background: #fff;
+            border-radius: 50px;
+            transform-origin: 50% 50%;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+        }
+        .blade:nth-child(1) {
+            transform: rotate(0deg) translate(150px) rotate(0deg);
+        }
+        .blade:nth-child(2) {
+            transform: rotate(120deg) translate(150px) rotate(0deg);
+        }
+        .blade:nth-child(3) {
+            transform: rotate(240deg) translate(150px) rotate(0deg);
+        }
+        input[type="checkbox"] {
+            position: absolute;
+            bottom: 50px;
+            width: 40px;
+            height: 40px;
+        }
+        input[type="checkbox"]+.fan {
+            animation-play-state: running;
+        }
+        input[type="checkbox"]:checked+.fan {
+            animation-play-state: paused;
+        }
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+    }
+    input[type="checkbox"]:checked+.fan {
+        animation-play-state: paused;
+    }
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+}
+@keyframes spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}

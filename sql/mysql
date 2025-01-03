@@ -1,0 +1,12 @@
+INSERT INTO Data1
+VALUES(5,"Rajat","UK",25,27);
+
+
+
+Data1
+order_id	first_name	Country	age	Status
+1	Sanidhya	Jaipur	12	        3
+2	Yash	Jaipur	17	           8
+3	Mohi	Kota	22	11
+4	Pankaj	Udaipur	19	22
+5	Rajat	UK	25	27

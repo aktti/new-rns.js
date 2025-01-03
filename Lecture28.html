@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNS IT SOLUTIONS</title>
+</head>
+<body>
+<script>
+class product{
+    constructor(productId,productName,productPrice){
+        this.productId   = productId;
+        this.productName = productName;
+        this.productPrice = productPrice;
+    }
+
+show(){
+    console.log(`I am going to buy${this.productName} so i need to borrow ${this.productPrice} from my dad.`);
+}
+
+}
+
+phone = new product(3,'iphone',840000)
+laptopAcc = new product(6,'Stikers',580000)
+
+phone.show()
+
+
+class user{
+    constructor(name,status,wallet){
+     this.name = name;
+     this.status = status;
+     this.wallet = wallet;
+    }
+
+  newFunc(){
+    console.log(`new user ${this.name} is added with balance ${this.wallet}`);
+  }
+}
+
+student1 = new user('Rajat' ,  true,20000)
+student2 = new user('Roshan',  true,4000)
+student3 = new user('Anjali',  true,6000)
+student4 = new user('Mohi',    true,90000)
+student5 = new user('Bhumi',   true,50000)
+student6 = new user('Ravi',    true, 950000)
+student7 = new user('Sanidhya',true,24000)
+student8 = new user('Asmi',    true,94000)
+
+student8.newFunc()
+
+</script>    
+</body>
+</html>
